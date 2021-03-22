@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'network/index'
   root "petitions#index"
   
   get 'petitions/index'

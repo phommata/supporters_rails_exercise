@@ -36,6 +36,7 @@
 # CUSTOM IGNORES
 Gemfile.lock
 /.DS_Store
+/app/.DS_Store
 
 
 /public/packs

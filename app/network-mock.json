@@ -1,0 +1,7 @@
+{
+	"user_id":1234,
+	"followed_petition_starters": [
+		{"starter_urn":"urn1"},
+		{"starter_urn":"urn2"}
+	]
+}
