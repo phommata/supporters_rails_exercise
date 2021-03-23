@@ -1,0 +1,7 @@
+{
+	"user_id":1234,
+	"followed_petition_starters": [
+		{"starter_urn":"urn:changeorg:starter:6757e68c-8ac4-11eb-8dcd-0242ac130003"},
+		{"starter_urn":"urn:changeorg:starter:c6e83ee8-151b-4ac0-8e4a-b0dcc11a7f0d"}
+	]
+}
