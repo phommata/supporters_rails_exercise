@@ -1,5 +1,10 @@
 # README
 
+Setup steps:
+# `bin/rails db:migrate RAILS_ENV=development`
+# `be rake db:seed`
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
