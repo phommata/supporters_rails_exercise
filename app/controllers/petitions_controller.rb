@@ -72,10 +72,10 @@ class PetitionsController < ApplicationController
     response = Net::HTTP.start(uri.host, uri.port, :read_timeout => 100) {|http| http.request(request)}
 
     if response.nil?
-      userIds = response['followed_petition_starters']['starter_urn'].values
-      render json: Petition.getPersonalizedPetitions(userIds)
+      render json: Petition.getLastNPetitions(5)
     end
 
-    render json: Petition.getLastNPetitions(5)
+    userIds = response['followed_petition_starters']['starter_urn'].values
+    render json: Petition.getPersonalizedPetitions(userIds)
   end
 end
