@@ -60,7 +60,7 @@ class PetitionsController < ApplicationController
   end
 
   def personalizedPetitions
-    uri = URI.parse("https://api.change.org/v1/network/": :id)
+    uri = URI.parse("https://api.change.org/v1/network/" + params[:id])
     response = Net::HTTP::get(uri.request_uri)
     userIds = response['followed_petition_starters']['starter_urn'].values
 
@@ -68,7 +68,7 @@ class PetitionsController < ApplicationController
   end
 
   def personalizedPetitionsFast
-    uri = URI.parse("https://api.change.org/v1/network/": :id)
+    uri = URI.parse("https://api.change.org/v1/network/" + params[:id])
     response = Net::HTTP.start(uri.host, uri.port, :read_timeout => 100) {|http| http.request(request)}
 
     if response.nil?
